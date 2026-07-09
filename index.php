@@ -1,0 +1,67 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="CSS/reset.css">
+    <link rel ="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Ronak</title>
+</head>
+<body>
+    <a id="navToggle" class="mText"><p id="detailsForMenu">☰ RV</p></a>
+    <nav class="navBar" role="navigation">
+        <a id="closeNav">&times;</a>
+        <header class="portfolioText">
+            <p id="fullDisplay">RV 
+                <span id="mDisplay">MOBILE DISPLAY</span>
+                <span id="tDisplay">TABLET DISPLAY</span>
+            </p>
+        </header>
+        <a class="active" href="index.php">Homepage</a>
+        <a href="aboutMe.php">About</a>
+        <a href="myExperiences.php">Projects</a>
+        <a href="skillsAndQual.php">Skills and Qualifications</a>
+
+    </nav>
+    <figure class="frontImage">
+        <img src="Images/IMG-20240629-WA0032.jpg" alt="pic">
+    </figure>
+        <article class="FontAndText">
+            <div id="myNameText">
+                <caption><b id="blueText">R</b><b id = "regText">onak</b><br><b id="blueText">V</b><b id="regText">isram</b></caption>
+            </div>
+        </article>
+    <footer class="homepageFooter">
+        <div class="footer1">
+            <p id="contactInfo">Contact Me : </p>
+        </div>
+    <div class="footer1">
+        <figure class="linkedImg">
+            <a href="https://www.linkedin.com/in/ronak-visram-919aa7296/"><img src="Images/360_F_546782398_26V3pL84dJYL7ovgIIIjcDJ7IhPUDxSA-removebg-preview-modified.png" alt="linkedIn"></a>
+        </figure>
+    </div>
+    <div class="footer1">
+        <figure class="instaImg">
+            <a href="https://www.instagram.com/rv_960/"><img src="Images/camera-photography-icon-symbol-image-illustration-of-multimedia-photographic-lens-grapich-design-images-vector-removebg-preview-modified.png" alt="Insta"></a>
+        </figure>
+    </div>
+    <div class="footer1">
+        <figure class="gitImg">
+            <a href="https://github.com/ronakVisram2006"><img src="Images/GitHub-logo-modified.png" alt="Git"></a>
+        </figure>
+    </div>
+    </footer>
+</body>
+</html>

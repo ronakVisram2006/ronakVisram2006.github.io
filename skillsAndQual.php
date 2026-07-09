@@ -1,0 +1,104 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title>skillsAndQual</title>
+</head>
+<body>
+    <a id="navToggle" class="mText"><p id="detailsForMenu">☰ RV</p></a>
+    <nav class="navBar" role="navigation">
+        <a id="closeNav">&times;</a>
+        <header class="portfolioText">
+            <p id="fullDisplay">RV 
+                <span id="mDisplay">MOBILE DISPLAY</span>
+                <span id="tDisplay">TABLET DISPLAY</span>
+            </p>
+        </header>
+        <a class="active" href="index.php">Homepage</a>
+        <a href="aboutMe.php">About</a>
+        <a href="myExperiences.php">Projects</a>
+        <a href="skillsAndQual.php">Skills and Qualifications</a>
+
+    </nav>
+    <figure class="frontImage">
+        <img src="Images/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background.jpg" alt="pic">
+    </figure>
+    <h1 id="titleForPages">My Education and Skills</h1>
+    <div class="container">
+        <div class="item1">
+            <p id="educationText">My Education</p>
+        </div>
+        <div class="item">
+            <p id="details">2017-2020 - </p>
+            <figure id="smallIcon">
+                <img src="Images/whitmore-high-school-harrow-london__1_-removebg-preview-modified.png" alt="">
+            </figure>
+            <p>I took GCSE'S at Whitmore high school in 2022 of the academic year, including subjects such as</p>
+            <p>Maths, English, Science, RMT, Geography, French, and Computer Science.</p>
+        </div>
+        <div class="item">
+            <p id="details">2020-2023 - </p>
+            <figure id="smallIcon">
+                <img src="Images/whitmore-high-school-harrow-london__1_-removebg-preview-modified.png" alt="">
+            </figure>
+            <p>I continued my A levels in Whitmore high school following 2022 into 2023, Where i took more subjects including</p>
+            <p>Mathematics, Computer Science, Economics and Media Studies </p>
+            <p>I later dropped media and my interest within Computer Science grew as we developed our knowledge</p>
+        </div>
+        <div class="item">
+            <p id="details">2024-present - </p>
+            <figure id="qmIcon">
+                <img src="Images/Queen Mary University-06.png" alt="">
+            </figure>
+            <p>Studying Computer Science at Queen Mary University of London, advancing my coding knowledge with each passing day</p>
+            <p>Working on numerous coding projects </p>
+        </div>
+        </div>
+    <div class="container2">
+        <div class="item1">
+            <p id="educationText">My Skills</p>
+        </div>
+        <div class="item">
+            <p id="details">Communication</p>
+            <br><br>
+            <p>Through numerous assessed activities within many modules such as Professional Research and Practice, i have gained vital communication skills</p>
+            <p>As we must organise a presentation with people we havent seen before, allowing for both challange and subsequent growth</p>
+        </div>
+        <div class="item">
+            <p id="details">Task Management</p>
+            <br><br>
+            <p>By handling multiple different modules at the same time, it has allowed me to efficiently organise my time in order to get ahead of all modules</p>
+            <p>Currently i have an organised timetable, which i stick to each day</p>
+        </div>
+        <div class="item">
+            <p id="details">Leadership</p>
+            <br><br>
+            <p>Demonstating leadership is vital within the computing field, as each programmer must be efficiently organised within the group</p>
+            <p>In many of my modules, i have taken on the role of the group leader and taken responsibility for organising our tasks as a group</p>
+        </div>
+        <div class="item">
+            <p id="details">Commitment</p>
+            <br><br>
+            <p>Despite many challanges such as the specific requirements of QMs code, i have successfully adapted myself and changed according to the challange</p>
+            <p>To each persons growth, there must be challanges that help them strive</p>
+        </div>
+        </div>
+
+</body>
+</html>

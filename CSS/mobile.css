@@ -1,0 +1,162 @@
+/* ===================== MOBILE ===================== */
+
+#mDisplay { display: block; }
+#regText  { display: none; }
+#tDisplay { display: block; }
+#fullDisplay { display: none; }
+.mText {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+/* Background image */
+.frontImage img {
+  position: fixed;
+}
+
+/* Name / monogram overlay */
+.FontAndText {
+  display: block;
+  position: fixed;
+  top: 4rem;
+  left: 1rem;
+  z-index: 1;
+  margin-top: 0;
+}
+#myNameText {
+  font-size: 2.75rem;
+  line-height: 1;
+}
+
+/* Nav */
+.navBar {
+  padding-top: 0;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  gap: 2.5rem;
+}
+.navBar.show {
+  display: flex;
+}
+.navBar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+/* Close button — was invisible/covered, now explicit + on top */
+#closeNav {
+  font-size: 2.5rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--text);
+  z-index: 3;
+  line-height: 1;
+}
+#closeNav:hover {
+  color: var(--accent);
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+/* Layout containers */
+.container, .container2 {
+  flex-wrap: wrap;
+}
+.careerContainer {
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+.blogContainer, .loginContainer {
+  margin-top: 8rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#buttonL {
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* About page */
+.aboutMeImage img {
+  width: 60%;
+  border-radius: 100%;
+  margin-left: 0;
+}
+.aboutMeTextContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 0;
+  text-align: center;
+}
+
+/* Comments */
+.commentInformation {
+  margin-top: 2rem;
+  width: 90%;
+  left: 0;
+  right: 0;
+}
+.commentsContainer {
+  height: 60%;
+}
+
+/* ---- Homepage footer: pinned bottom bar ---- */
+.homepageFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  gap: 0.5rem;
+  z-index: 1;
+  box-sizing: border-box;
+  border-top: none;
+}
+#contactInfo {
+  margin-top: 0;
+  font-size: 0.85rem;
+}
+.footer1 {
+  text-align: right;
+}
+.gitImg img,
+.instaImg img,
+.linkedImg img {
+  margin-top: 0;
+  margin-right: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+#monthSelected {
+  font-size: 1rem;
+}
+

@@ -1,0 +1,150 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ronak Visram — work experience including a full-stack tennis booking platform, pharmacy work, and maths qualifications.">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <script src="script.js" defer></script>
+
+    <title>Experience | Ronak Visram</title>
+</head>
+<body>
+    <button id="navToggle" class="mText" aria-label="Open menu"><span id="detailsForMenu">☰ RV</span></button>
+    <nav class="navBar" role="navigation" aria-label="Main navigation">
+        <a id="closeNav" aria-label="Close menu">&times;</a>
+        <header class="portfolioText">
+            <p id="fullDisplay">RV
+                <span id="mDisplay">MOBILE DISPLAY</span>
+                <span id="tDisplay">TABLET DISPLAY</span>
+            </p>
+        </header>
+        <a href="index.php">Homepage</a>
+        <a href="aboutMe.php">About</a>
+        <a class="active" href="myExperiences.php">Projects</a>
+        <a href="skillsAndQual.php">Skills and Qualifications</a>
+
+    </nav>
+
+    <figure class="frontImage">
+        <img src="Images/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background.jpg" alt="Laptop and smartphone on a desk, representing a modern workspace">
+    </figure>
+
+    <article>
+        <h2 id="titleForPages">My Projects</h2>
+
+        <div class="careerContainer">
+
+            <div class="experiences" onclick="openModal('weatherAPIsite')">
+                <span class="expDate">2025/2026</span>
+                <p id="educationText">Weather Tracking Website</p>
+                <figure id="ssOfCode1">
+                    <video class="projectVideo" autoplay muted loop playsinline>
+                        <source src="Images/weatherWebsite.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <p>Group-based project, Built a responsive weather website that displays current conditions and forecasts for any location. Using API integration and weather data in order to provide accurate information.</p>
+                <p class="expLabel">Languages used</p>
+                <ul class="techList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+
+            <div class="experiences" onclick="openModal('squadFill')">
+                <span class="expDate">2025/2026</span>
+                <p id="educationText">SquadFill</p>
+                  <figure id="ssOfCode1">
+                    <video class="projectVideo" autoplay muted loop playsinline>
+                        <source src="Images/squadFill.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <p>Assigned Group Based project, Built a matchmaker for missing players, allowing users to find and join teams for various games. Using React (Native) and Node JS.</p>
+                <p class="expLabel">Languages used</p>
+                <ul class="techList">
+                    <li>React native</li>
+                    <li>TypeScript</li>
+                    <li>Node JS</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+
+            <div class="experiences" onclick="openModal('chessBot')">
+                <span class="expDate">Ongoing</span>
+                <p id="educationText">Chess Bot</p>
+                <figure id="ssOfCode1">
+                    <video class="projectVideo" autoplay muted loop playsinline>
+                        <source src="Images/chessBot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <p>Began development of a chess bot using Python and the Stockfish engine. Uses minimax algorithm for optimal move selection. as well as alpha-beta pruning and positional evaluation tables.</p>
+                <p class="expLabel">Languages used</p>
+                <ul class="techList">
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="experiences" onclick="openModal('PortfolioSite')">
+                <span class="expDate">2025</span>
+                <p id="educationText">Portfolio Site</p>
+                <figure id="ssOfCode1">
+                    <video class="projectVideo" autoplay muted loop playsinline>
+                        <source src="Images/personalWebsite.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <p>Developed a responsive portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript.</p>
+                <p class="expLabel">
+Languages used</p>
+                <ul class="techList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+        </div>
+    </article>
+
+    <footer class="experienceFooter">
+        <a href="FrontEndHTML.html">To Homepage</a> | <a href="https://www.linkedin.com/in/ronak-visram-919aa7296/" target="_blank" rel="noopener">LinkedIn</a>
+        <p id="ending">© 2025 Ronak Visram</p>
+    </footer>
+<div id="projectModal" class="modal">
+
+    <div class="modalContent">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <video id="modalVideo" class="modalVideo" autoplay muted loop playsinline>
+            <source id="modalVideoSource" src="" type="video/mp4">
+        </video>
+
+        <p id="modalDescription"></p>
+
+        <a id="githubLink" target="_blank">
+            View GitHub Repository
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Ronak Visram — Computer Science student at QMUL, pharmacy assistant, and aspiring software developer.">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <script src="script.js" defer></script>
+
+    <title>About | Ronak Visram</title>
+</head>
+<body>
+    <button id="navToggle" class="mText" aria-label="Open menu"><span id="detailsForMenu">☰ RV</span></button>
+
+<nav class="navBar" role="navigation" aria-label="Main navigation">
+
+    
+    <a id="closeNav" aria-label="Close menu">&times;</a>
+
+    <header class="portfolioText">
+        <p id="fullDisplay">RV
+            <span id="mDisplay">MOBILE DISPLAY</span>
+            <span id="tDisplay">TABLET DISPLAY</span>
+        </p>
+    </header>
+
+    <a href="index.php">Homepage</a>
+    <a class="active" href="aboutMe.php">About</a>
+    <a href="myExperiences.php">Projects</a>
+    <a href="skillsAndQual.php">Skills and Qualifications</a>
+
+</nav>
+
+
+    <figure class="frontImage">
+        <img src="Images/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background.jpg" alt="Laptop and smartphone on a desk, representing a modern workspace">
+    </figure>
+
+    <article class="aboutMeContainer">
+        <section id="aboutme">
+            <h2 id="titleForPages">About Me</h2>
+            <div class="aboutMeTextContainer">
+                <figure class="aboutMeImage">
+                    <img src="Images/20250212_171237.jpg" alt="Portrait of Ronak Visram">
+                </figure>
+                <div id="textAbout">
+                    <p>I'm Ronak Visram, a Computer Science student at Queen Mary University of London (QMUL). My journey in technology is just beginning, but I'm already excited about the potential it holds to shape the world around us. Balancing my studies with a job at a pharmacy has been a rewarding challenge — it's taught me the importance of communication, adaptability, and attention to detail.</p>
+                    <p>Working in a pharmacy has also given me insight into the real-world impact of precision and problem-solving. I've seen how strong teamwork and careful attention can make a genuine difference, and I hope to bring those qualities into my future career. My goal is to contribute to innovative solutions that solve real-world problems and improve people's lives.</p>
+                    <p>I'm determined to keep pushing forward, gaining hands-on experience, and building a unique path in the tech industry. This is just the beginning of my story, and I can't wait to see where my curiosity and ambition will take me.</p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer class="experienceFooter">
+        <a href="index.php">To Homepage</a> | <a href="https://www.linkedin.com/in/ronak-visram-919aa7296/" target="_blank" rel="noopener">LinkedIn</a>
+        <p id="ending">© 2025 Ronak Visram</p>
+    </footer>
+</body>
+</html>
